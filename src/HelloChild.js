@@ -10,9 +10,10 @@ HelloChild(props) == HelloChild({name}) 구조분해할당해서 사용할 수 �
 
 */
 
-function HelloChild({name,color}){
+function HelloChild({name,color,isSpecial}){
     return (
         <>
+        <b>{isSpecial ? '트루일경우' : '트루가 아닌경우' }</b>
         <div style={{color}}>
             {name};
         </div>
